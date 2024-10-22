@@ -1,0 +1,183 @@
+<html>
+<head>
+    <title>using calculater</title>
+    <script type="text/javascript">
+        var n1, n2, op, cal, a = 0, p;
+        document.getElementById("result").disabled = true;
+        function one1() {
+            n1 = document.getElementById("result").value;
+            p = (n1 * 10) + 1;
+            document.getElementById("result").value = p;
+        }
+        function two1() {
+            n1 = document.getElementById("result").value;
+            p = (n1 * 10) + 2;
+            document.getElementById("result").value = p;
+        }
+        function three1() {
+            n1 = document.getElementById("result").value;
+            p = (n1 * 10) + 3;
+            document.getElementById("result").value = p;
+        }
+        function four1() {
+            n1 = document.getElementById("result").value;
+            p = (n1 * 10) + 4;
+            document.getElementById("result").value = p;
+        }
+        function five1() {
+            n1 = document.getElementById("result").value;
+            p = (n1 * 10) + 5;
+            document.getElementById("result").value = p;
+        }
+        function six1() {
+            n1 = document.getElementById("result").value;
+            p = (n1 * 10) + 6;
+            document.getElementById("result").value = p;
+        }
+        function seven1() {
+            n1 = document.getElementById("result").value;
+            p = (n1 * 10) + 7;
+            document.getElementById("result").value = p;
+        }
+        function eight1() {
+            n1 = document.getElementById("result").value;
+            p = (n1 * 10) + 8;
+            document.getElementById("result").value = p;
+        }
+        function nine1() {
+            n1 = document.getElementById("result").value;
+            p = (n1 * 10) + 9;
+            document.getElementById("result").value = p;
+        }
+        function zero1() {
+            n1 = document.getElementById("result").value;
+            p = (n1 * 10) + 0;
+            document.getElementById("result").value = p;
+        }
+        function add1() {
+            op = 1;
+            n1 = document.getElementById("result").value;
+            a = n1;
+            document.getElementById("result").value = "";
+        }
+        function sub1() {
+            op = 2;
+            n1 = document.getElementById("result").value;
+            a = n1;
+            document.getElementById("result").value = "";
+        }
+        function multi1() {
+            op = 3;
+            n1 = document.getElementById("result").value;
+            a = n1;
+            document.getElementById("result").value = "";
+        }
+        function div1() {
+            op = 4;
+            n1 = document.getElementById("result").value;
+            a = n1;
+            document.getElementById("result").value = "";
+        }
+        function equal1() {
+            n2 = document.getElementById("result").value;
+            if (op == 1) {
+                cal = parseInt(a) + parseInt(n2);
+                document.getElementById("result").value = cal;
+            }
+            if (op == 2) {
+                cal = parseInt(a) - parseInt(n2);
+                document.getElementById("result").value = cal;
+            }
+            if (op == 3) {
+                cal = parseInt(a) * parseInt(n2);
+                document.getElementById("result").value = cal;
+            }
+            if (op == 4) {
+                cal = parseInt(a) / parseInt(n2);
+                document.getElementById("result").value = cal;
+            }
+        }
+    </script>
+</head>
+
+<body><h1>Calculater</h1>
+    <form action="calculater.html">
+        <center>
+            <table border=20 bgcolor="lightgray" cellpadding=5 cellspacing=5>
+                <tr>
+                    <td>
+                        <table border=4 cellpadding=10 cellspacing=10 bgcolor="lightgreen">
+                            <tr>
+                                <td colspan=4>
+                                    <center><input type="text" size="30" name="result" id="result" placeholder="0">
+                                    </center>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center><input type="button" name="add" id="result" value=" + " onClick="add1()">
+                                    </center>
+                                </td>
+                                <td>
+                                    <center><input type="button" name="sub" id="result" value=" - " onClick="sub1()">
+                                    </center>
+                                </td>
+                                <td>
+                                    <center><input type="button" name="multi" id="result" value=" * "
+                                            onClick="multi1()"></center>
+                                </td>
+                                <td>
+                                    <center><input type="button" name="div" id="result" value=" / " onClick="div1()">
+                                    </center>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center><input type="button" name="one" id="result" value=" 1 " onClick="one1()">
+                                    </center>
+                                </td>
+                                <td>
+                                    <center><input type="button" name="two" id="result" value=" 2 " onClick="two1()">
+                                    </center>
+                                </td>
+                                <td>
+                                    <center><input type="button" name="three" id="result" value=" 3 "
+                                            onClick="three1()"></center>
+                                </td>
+                                <td>
+                                    <center><input type="button" name="four" value=" 4 " onClick="four1()"></center>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center><input type="button" name="five" value=" 5 " onClick="five1()"></center>
+                                </td>
+                                <td>
+                                    <center><input type="button" name="six" value=" 6 " onClick="six1()"></center>
+                                </td>
+                                <td>
+                                    <center><input type="button" name="seven" value=" 7 " onClick="seven1()"></center>
+                                </td>
+                                <td>
+                                    <center><input type="button" name="eight" value=" 8 " onClick="eight1()"></center>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center><input type="button" name="nine" value=" 9 " onClick="nine1()"></center>
+                                </td>
+                                <td>
+                                    <center><input type="button" name="zero" value=" 0 " onClick="zero1()"></center>
+                                </td>
+                                <td colspan=4>
+                                    <center><input type="button" name="equal" value=" = " onClick="equal1()" </center>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+    </form>
+</body>
+
+</html>
